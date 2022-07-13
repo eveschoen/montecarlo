@@ -77,7 +77,6 @@ help(Die.change_weight)
 ```
 * The docstring for `change_weight`:
         Help on function change_weight in module montecarlo.montecarlo:
-
         change_weight(self, face_val, new_weight)
             PURPOSE: Change the weight of a single side of the die.
             INPUTS:
@@ -92,14 +91,13 @@ help(Die.roll_die)
 ```
 
 * The docstring for `roll_die`:
-    Help on function roll_die in module montecarlo.montecarlo:
-
-    roll_die(self, num_rolls=1)
-        PURPOSE: Rolls the die one or more times
-        INPUT:
-        num_rolls   the number of times to roll the die - defaults to 1 (int)
-        OUTPUT:
-        results    a list of the outcomes of the die rolls
+        Help on function roll_die in module montecarlo.montecarlo
+        roll_die(self, num_rolls=1)
+            PURPOSE: Rolls the die one or more times
+            INPUT:
+            num_rolls   the number of times to roll the die - defaults to 1 (int)
+            OUTPUT:
+            results    a list of the outcomes of the die rolls
     
 * `roll_die` takes an `int` as optional input for the number of rolls and returns the results of however many rolls were specified by the user.
 
@@ -109,7 +107,6 @@ help(Die.show_die)
 
 * The docstring for `show_die`:
     Help on function show_die in module montecarlo.montecarlo:
-
     show_die(self)
         PURPOSE: Show the user the die's current set of faces/weights.
         INPUT:
@@ -127,7 +124,6 @@ help(Game.play)
 
 * The docstring for `play`:
     Help on function play in module montecarlo.montecarlo:
-
     play(self, num_rolls)
         PURPOSE: Rolls the dice however many times are specified in num_rolls and saves the results of the game to a private dataframe. 
         INPUT:
@@ -141,7 +137,6 @@ help(Game.show_results)
 
 * The docstring for `show_results`:
     Help on function show_results in module montecarlo.montecarlo:
-
     show_results(self, df_form='wide')
         PURPOSE: Shows the user the results of the most recent play in the game by passing the dataframe to the user in a specified format.
         INPUT:
@@ -159,7 +154,6 @@ help(Analyzer.comp_jackpot)
 
 * The docstring for `comp_jackpot`:
     Help on function comp_jackpot in module montecarlo.montecarlo:
-
     comp_jackpot(self)
         PURPOSE: Computes how many times the game resulted in all faces of the dice being identical, or in other words, the "jackpot."
         INPUT:
@@ -175,7 +169,6 @@ help(Analyzer.comp_combo)
 
 * The docstring for `comp_combo`:
     Help on function comp_combo in module montecarlo.montecarlo:
-
     comp_combo(self)
         PURPOSE: Computes the distinct combinations of faces rolled, along with their counts.
         INPUT:
@@ -190,7 +183,6 @@ help(Analyzer.count_faces_per_roll)
 ```
 * The docstring for `count_faces_per_roll`:
     Help on function count_faces_per_roll in module montecarlo.montecarlo:
-
     count_faces_per_roll(self, count_val)
         PURPOSE: Compute how many times a given face is rolled in each event/roll.
         INPUT:
