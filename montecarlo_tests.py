@@ -330,7 +330,7 @@ class AnalyzerTestSuite(unittest.TestCase):
         game_results_wide = game.show_results('wide')
             
         analyze_wide = Analyzer(game_results_wide)
-        analyze_wide.count_faces_per_roll(3)
+        analyze_wide.count_faces_per_roll()
             
         actual = len(analyze_wide.val_counts_df)
         expected = 10
@@ -351,7 +351,7 @@ class AnalyzerTestSuite(unittest.TestCase):
         game_results_nar = game.show_results('narrow')
             
         analyze_nar = Analyzer(game_results_nar)
-        analyze_nar.count_faces_per_roll(3)
+        analyze_nar.count_faces_per_roll()
             
         actual = len(analyze_nar.val_counts_df)
         expected = 10

@@ -241,44 +241,27 @@ class Analyzer:
                                                     pd.Series(sorted(x)),\
                                                     1).value_counts().to_frame('n')
             
-    def count_faces_per_roll(self, count_val):
+    def count_faces_per_roll(self):
         """
         PURPOSE: Compute how many times a given face is rolled in each event/roll.
         
         INPUT:
-        count_val    the face value to look for (int/float/str - must be an existing face value)
+        none
         
         OUTPUT:
         none - results are stored as val_counts_df (dataframe)
         """
-        val_counts = []
         # narrow df
         if len(self.game_results.columns) == 1:
             game_unstacked = self.game_results.unstack(level = 0)
             
-            for i in range(len(game_unstacked.index)):
-                count = 0
-                for j in range(len(game_unstacked.columns)):
-                    if game_unstacked.loc[i][j] == count_val:
-                        count += 1
-                    else:
-                        continue
-                val_counts.append(count)
-            list_index = list(game_unstacked.index)
+            self.val_counts_df = game_unstacked.apply(pd.Series.value_counts,\
+                                                      axis = 1).fillna(0)
                 
         # wide df
         else:
-            for i in range(len(self.game_results.index)):
-                count = 0
-                for j in range(len(self.game_results.columns)):
-                    if self.game_results[j][i] == count_val:
-                        count += 1
-                    else:
-                        continue
-                val_counts.append(count)
-            list_index = list(self.game_results.index)
-        
-        self.val_counts_df = pd.DataFrame(val_counts, list_index)
+            self.val_counts_df = self.game_results.apply(pd.Series.value_counts,\
+                                                         axis = 1).fillna(0)
         
 
 

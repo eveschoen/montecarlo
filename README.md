@@ -63,7 +63,7 @@ analyzer.comp_jackpot()
 analyzer.comp_combo()
 ```
 ```
-analyzer.count_faces_per_roll(1)
+analyzer.count_faces_per_roll()
 ```
 You will find a detailed description of each of these methods in the API description section.
 
@@ -156,7 +156,7 @@ show_results(self, df_form='wide')
 
 * `show_results` takes the optional input of 'narrow' or 'wide' for how the user would like to see the dataframe returned (the default value is 'wide') and returns a dataframe of either narrow or wide format.
 
-3. Last is the Analyzer class which has the following public methods: `[comp_jackpot(), comp_combo(), count_faces_per_roll(count_val)]`. See below for their docstrings. Note that all methods in the Analyzer class make use of the public attribute, `game_results`, which is the dataframe that was passed to the Analyzer object.
+3. Last is the Analyzer class which has the following public methods: `[comp_jackpot(), comp_combo(), count_faces_per_roll()]`. See below for their docstrings. Note that all methods in the Analyzer class make use of the public attribute, `game_results`, which is the dataframe that was passed to the Analyzer object.
 
 ```
 help(Analyzer.comp_jackpot)
@@ -201,7 +201,7 @@ Help on function count_faces_per_roll in module montecarlo.montecarlo:
 count_faces_per_roll(self, count_val)
         PURPOSE: Compute how many times a given face is rolled in each event/roll.
         INPUT:
-        count_val    the face value to look for (int/float/str - must be an existing face value)
+        none
         OUTPUT:
         none - results are stored as val_counts_df (dataframe)
 ```
