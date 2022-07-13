@@ -75,7 +75,7 @@ The classes and their public methods and attributes are detailed in the followin
 ```
 help(Die.change_weight)
 ```
-    The docstring for `change_weight`:
+* The docstring for `change_weight`:
     Help on function change_weight in module montecarlo.montecarlo:
 
     change_weight(self, face_val, new_weight)
@@ -91,7 +91,7 @@ help(Die.change_weight)
 help(Die.roll_die)
 ```
 
-    The docstring for `roll_die`:
+* The docstring for `roll_die`:
     Help on function roll_die in module montecarlo.montecarlo:
 
     roll_die(self, num_rolls=1)
@@ -107,7 +107,7 @@ help(Die.roll_die)
 help(Die.show_die)
 ```
 
-    The docstring for `show_die`:
+* The docstring for `show_die`:
     Help on function show_die in module montecarlo.montecarlo:
 
     show_die(self)
@@ -125,7 +125,7 @@ help(Die.show_die)
 help(Game.play)
 ```
 
-    The docstring for `play`:
+* The docstring for `play`:
     Help on function play in module montecarlo.montecarlo:
 
     play(self, num_rolls)
@@ -139,7 +139,7 @@ help(Game.play)
 help(Game.show_results)
 ```
 
-    The docstring for `show_results`:
+* The docstring for `show_results`:
     Help on function show_results in module montecarlo.montecarlo:
 
     show_results(self, df_form='wide')
@@ -157,7 +157,7 @@ help(Game.show_results)
 help(Analyzer.comp_jackpot)
 ```
 
-    The docstring for `comp_jackpot`:
+* The docstring for `comp_jackpot`:
     Help on function comp_jackpot in module montecarlo.montecarlo:
 
     comp_jackpot(self)
@@ -173,7 +173,7 @@ help(Analyzer.comp_jackpot)
 help(Analyzer.comp_combo)
 ```
 
-    The docstring for `comp_combo`:
+* The docstring for `comp_combo`:
     Help on function comp_combo in module montecarlo.montecarlo:
 
     comp_combo(self)
@@ -188,8 +188,7 @@ help(Analyzer.comp_combo)
 ```
 help(Analyzer.count_faces_per_roll)
 ```
-
-    The docstring for `count_faces_per_roll`:
+* The docstring for `count_faces_per_roll`:
     Help on function count_faces_per_roll in module montecarlo.montecarlo:
 
     count_faces_per_roll(self, count_val)
