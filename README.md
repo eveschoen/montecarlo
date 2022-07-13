@@ -76,16 +76,16 @@ The classes and their public methods and attributes are detailed in the followin
 help(Die.change_weight)
 ```
 * The docstring for `change_weight`:
-    Help on function change_weight in module montecarlo.montecarlo:
+        Help on function change_weight in module montecarlo.montecarlo:
 
-    change_weight(self, face_val, new_weight)
-        PURPOSE: Change the weight of a single side of the die.
-        INPUTS:
-        face_val    the face value to be changed (str/float/int)
-        new_weight  the desired weight of specified die (float/int)
-        OUTPUT:
-        none
-        print statements if incorrect inputs are provided
+        change_weight(self, face_val, new_weight)
+            PURPOSE: Change the weight of a single side of the die.
+            INPUTS:
+            face_val    the face value to be changed (str/float/int)
+            new_weight  the desired weight of specified die (float/int)
+            OUTPUT:
+            none
+            print statements if incorrect inputs are provided
     
 ```
 help(Die.roll_die)
