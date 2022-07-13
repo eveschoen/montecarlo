@@ -110,7 +110,7 @@ help(Die.show_die)
 ```
 
 * The docstring for `show_die`:
-* ```
+```
 Help on function show_die in module montecarlo.montecarlo:
 show_die(self)
         PURPOSE: Show the user the die's current set of faces/weights.
