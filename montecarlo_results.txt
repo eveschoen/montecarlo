@@ -2,6 +2,8 @@ test_1_comp_jackpot_wide (__main__.AnalyzerTestSuite) ... ok
 test_2_comp_jackpot_nar (__main__.AnalyzerTestSuite) ... ok
 test_3_comp_combo_wide (__main__.AnalyzerTestSuite) ... ok
 test_4_comp_combo_nar (__main__.AnalyzerTestSuite) ... ok
+test_5_count_faces_per_roll_wide (__main__.AnalyzerTestSuite) ... ok
+test_6_count_faces_per_roll_nar (__main__.AnalyzerTestSuite) ... ok
 test_1_change_weight (__main__.DieTestSuite) ... ok
 test_2_roll_die_default (__main__.DieTestSuite) ... ok
 test_3_roll_die (__main__.DieTestSuite) ... ok
@@ -11,6 +13,6 @@ test_2_show_results_narrow (__main__.GameTestSuite) ... ok
 test_3_show_results_wide (__main__.GameTestSuite) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.434s
+Ran 13 tests in 0.609s
 
 OK
