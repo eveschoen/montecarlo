@@ -40,7 +40,7 @@ die2.roll_die(5)
 ```
 die2.show_die()
 ```
-Within the Die class, you can take advantage of the `change_weight`, `roll_die`, and `show_die methods`. For more information on these methods, see their docstrings in the API description.
+Within the Die class, you can take advantage of the `change_weight`, `roll_die`, and `show_die` methods. For more information on these methods, see their docstrings in the API description.
 
 Next, you will want to play a game. Start by instantiating a Game object, passing it a list of dice (Die objects) with similar faces. Here, we make a list of 3 dice.
 ```
