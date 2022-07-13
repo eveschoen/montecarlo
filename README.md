@@ -212,11 +212,11 @@ count_faces_per_roll(self, count_val)
 Files in the repo include:
 * montecarlo
     * montecarlo.py
-    * montecarlo_tests.py
     * __init__.py
 * README.md
 * setup.py
 * .gitignore
 * LICENSE
 * scenarios.ipynb
+* montecarlo_tests.py
 * montecarlo_results.txt
